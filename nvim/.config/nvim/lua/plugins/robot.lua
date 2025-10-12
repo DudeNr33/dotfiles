@@ -5,7 +5,6 @@ return {
       robotcode = {
         -- dynamically adjust cmd depending on lockfiles in root_dir
         cmd = function(dispatchers, config)
-          vim.notify("robotcode root dir is: " .. config.root_dir)
           local local_cmd
           if vim.uv.fs_stat(config.root_dir .. "/uv.lock") then
             local_cmd = { "uv", "--directory", config.root_dir, "run", "robotcode", "language-server" }
