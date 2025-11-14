@@ -4,6 +4,7 @@
 vim.g.python3_host_prog = "~/.config/nvim/.venv/bin/python3"
 vim.o.timeoutlen = 300 -- timeout for 'normal' mappings
 vim.o.ttimeoutlen = 10 -- timeout for terminal sequences, e.g. involving ESC
+vim.o.swapfile = false
 
 -- local powershell_options = {
 --   shell = vim.fn.executable("pwsh") == 1 and "pwsh" or "powershell",
